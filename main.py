@@ -4,12 +4,11 @@ USERNAME = input("Enter your Username: ")
 PASS = input("Enter your password: ")
 
 
-def getTotalFollowers(api, user_id): #Returns the list of followers of the user. It should be equivalent of calling api.getTotalFollowers from InstagramAPI
+def getTotalFollowers(api, user_id): 
 
     followers = []
     next_max_id = True
     while next_max_id:
-        # first iteration hack
         if next_max_id is True:
             next_max_id = ''
 
@@ -18,12 +17,10 @@ def getTotalFollowers(api, user_id): #Returns the list of followers of the user.
         next_max_id = api.LastJson.get('next_max_id', '')
     return followers
 
-def getTotalFollowings(api, user_id): #Returns the list of followers of the user. It should be equivalent of calling api.getTotalFollowers from InstagramAPI
-
+def getTotalFollowings(api, user_id): 
     followers = []
     next_max_id = True
     while next_max_id:
-        # first iteration hack
         if next_max_id is True:
             next_max_id = ''
 
