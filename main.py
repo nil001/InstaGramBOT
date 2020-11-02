@@ -65,5 +65,6 @@ def unFollow(number: int):
         nonFollow.pop(user)
 
 if __name__ == "__main__":
-    num=int(input("Enter the number of people you wanna unfollow: "))
-    unFollow(num)
+    n=int(input("Enter the number of people you wanna unfollow: "))
+    unFollow(n)
+    
